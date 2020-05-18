@@ -9,6 +9,5 @@ namespace WebApp.Models
     {
         public int yearOne { get; set; }
         public int yearTwo { get; set; }
-        public int Result => yearOne;
     }
 }

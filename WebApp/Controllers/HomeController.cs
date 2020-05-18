@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using WebApp.Models;
 
 namespace WebApp.Controllers
 {
@@ -9,5 +10,18 @@ namespace WebApp.Controllers
             return View();
         }
 
+        [HttpPost]
+        public IActionResult Index(int yearOne, int yearTwo)
+        {
+            return RedirectToAction(
+                "Results", 
+                new { yearOne, yearTwo }
+                );
+        }
+
+        public IActionResult Results(ResultsViewModel viewModel)
+        {
+            return View(viewModel);
+        }
     }
 }

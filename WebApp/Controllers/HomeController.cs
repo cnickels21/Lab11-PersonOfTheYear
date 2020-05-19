@@ -19,7 +19,7 @@ namespace WebApp.Controllers
                 );
         }
 
-        public IActionResult Results(ResultsViewModel viewModel)
+        public IActionResult Results(TimePerson viewModel)
         {
             return View(viewModel);
         }

@@ -4,7 +4,9 @@
 @{
 }
 
-@model WebApp.Models.ResultsViewModel
+@model WebApp.Models.TimePerson;
+@model System.Collections.Generic.List<WebApp.Models.TimePerson>;
+
 
 <!DOCTYPE html>
 
@@ -17,7 +19,13 @@
 
 <body>
     <h1>Chosen Results!</h1>
-    <span>You chose @Model.yearOne and @Model.yearTwo</span>
+
+    @foreach (WebApp.Models.TimePerson person in Model)
+    {
+        <ul>
+            <li>@person.Name</li>
+        </ul>
+    }
 
 
 </body>

@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace WebApp.Models
 {
-    public class TimePerson
+    public class TimePerson : IEnumerable
     {
 		// Time Person Properties
 		public int Year { get; set; }
@@ -44,5 +44,9 @@ namespace WebApp.Models
 				.ToList();
 		}
 
+		public IEnumerator GetEnumerator()
+		{
+			return default;
+		}
 	}
 }

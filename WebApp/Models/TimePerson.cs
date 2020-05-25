@@ -55,7 +55,7 @@ namespace WebApp.Models
 			{
 				for (int i = 1; i < allOfThePeople.Length; i++)
 				{
-					allOfThePeople
+					return allOfThePeople
 					.Skip(1)
 					.Select(eachPerson => eachPerson.Split(","))
 					.Select(eachColumn =>

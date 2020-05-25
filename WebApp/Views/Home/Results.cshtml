@@ -20,7 +20,9 @@
 <body>
     <h1>Chosen Results!</h1>
 
-    @foreach (WebApp.Models.TimePerson person in Model)
+    @*!!!!!!DON'T FORGET CSS!!!!!!*@
+
+    @foreach (WebApp.Models.TimePerson person in Model) // 1.  Needs fixing: get data from csv to render
     {
         <ul>
             <li>@person.Name</li>

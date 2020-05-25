@@ -14,14 +14,15 @@ namespace WebApp.Controllers
         public IActionResult Index(int yearOne, int yearTwo)
         {
             return RedirectToAction(
-                "Results", 
+                "Results",
                 new { yearOne, yearTwo }
                 );
         }
 
-        public IActionResult Results(TimePerson viewModel)
+        // 2. Call GetPersons here to push data through to the view
+        public IActionResult Results(int yearOne, int yearTwo)
         {
-            return View(viewModel);
+            return View(TimePerson.GetPersons(yearOne, yearTwo));
         }
     }
 }

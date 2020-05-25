@@ -14,7 +14,7 @@ namespace WebApp.Controllers
         public IActionResult Index(int yearOne, int yearTwo)
         {
             return RedirectToAction(
-                "Results",
+                "Results", 
                 new { yearOne, yearTwo }
                 );
         }

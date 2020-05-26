@@ -1,2 +1,28 @@
 ﻿body {
+    box-sizing: border-box;
+    margin: 10px auto;
+    background-color: palevioletred;
+    max-width: 540px;
+}
+
+h1 {
+    font-size: 50px;
+    color: blueviolet;
+    text-align: center;
+}
+
+form {
+    font-size: 25px;
+    margin: 0 auto;
+    color: blueviolet;
+    max-width: 60%;
+}
+
+fieldset {
+    text-align: center;
+}
+
+input {
+    display: block;
+    margin: 0 auto;
 }

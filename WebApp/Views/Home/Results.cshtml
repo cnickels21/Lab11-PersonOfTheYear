@@ -14,6 +14,7 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>People of the Year!</title>
+    <link rel="stylesheet" href="~/Styles.css" />
 </head>
 
 <body>
@@ -21,7 +22,7 @@
 
     @*!!!!!!DON'T FORGET CSS!!!!!!*@
 
-    @foreach (WebApp.Models.TimePerson person in Model) // 1.  Needs fixing: get data from csv to render
+    @foreach (WebApp.Models.TimePerson person in Model)
     {
         <ul>
             <li>@person.Name</li>

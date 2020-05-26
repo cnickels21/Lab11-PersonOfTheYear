@@ -24,9 +24,13 @@
 
     @foreach (WebApp.Models.TimePerson person in Model)
     {
-        <ul>
-            <li>@person.Name</li>
-        </ul>
+        <div>
+            <ul>
+                <li>@person.Name</li>
+                <li>@person.Year</li>
+                <li>@person.Title</li>
+            </ul>
+        </div>
     }
 
 

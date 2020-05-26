@@ -73,6 +73,9 @@ namespace WebApp.Models
 						);
 						return timePerson;
 					})
+					.Where(person => 
+					person.Year >= yearOne && 
+					person.Year <= yearTwo)
 					.ToList();
 				}
 				return default;

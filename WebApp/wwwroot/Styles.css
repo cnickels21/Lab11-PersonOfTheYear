@@ -1,0 +1,41 @@
+﻿body {
+    box-sizing: border-box;
+    margin: 10px auto;
+    background-color: palevioletred;
+    max-width: 720px;
+}
+
+h1 {
+    font-size: 50px;
+    color: blueviolet;
+    text-align: center;
+}
+
+form {
+    font-size: 25px;
+    margin: 0 auto;
+    color: blueviolet;
+    max-width: 60%;
+}
+
+fieldset {
+    text-align: center;
+}
+
+input {
+    display: block;
+    margin: 0 auto;
+}
+
+div {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 30%;
+    border: 2px dashed green;
+    margin: 10px auto;
+    border-radius: 15%;
+}
+
+li {
+    color: blueviolet;
+}

@@ -5,6 +5,10 @@ namespace WebApp.Controllers
 {
     public class HomeController : Controller
     {
+        public HomeController()
+        {
+        }
+
         public IActionResult Index()
         {
             return View();
@@ -19,9 +23,10 @@ namespace WebApp.Controllers
                 );
         }
 
-        public IActionResult Results(TimePerson viewModel)
+        // 2. Call GetPersons here to push data through to the view
+        public IActionResult Results(int yearOne, int yearTwo)
         {
-            return View(viewModel);
+            return View(TimePerson.GetPersons(yearOne, yearTwo));
         }
     }
 }

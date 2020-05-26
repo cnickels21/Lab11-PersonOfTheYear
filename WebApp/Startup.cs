@@ -26,12 +26,8 @@ namespace WebApp
 
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapControllerRoute("default", "{controller=Home}/{action=Index}");
-
-                //endpoints.MapGet("/", async context =>
-                //{
-                //    await context.Response.WriteAsync("Hello World!");
-                //});
+                endpoints.MapControllerRoute(
+                    "default", "{controller=Home}/{action=Index}");
             });
 
             app.UseStaticFiles();
